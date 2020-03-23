@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <h1>
+    Add two numbers!
+    </h1>
+    
+    <input type="number" id="p1">
+    <input type="number" id="p2">
+    <button onclick="sum()">
+      sum
+    </button>
+    
+    <h2 id="answer">
+    </h2>
+  <script>
+      function sum()
+{
+	var f1 = document.getElementById("p1").value;
+	var f2 = document.getElementById("p2").value;
+
+	var result = parseFloat(f1) + parseFloat(f2);
+ 
+  if(!isNaN(result)){
+  	document.getElementById("answer").innerHTML = "Here is the result! " + result;
+
+  }
+}
+  </script>  
+</body>
+</html>
